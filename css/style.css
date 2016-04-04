@@ -1,0 +1,214 @@
+.mdl-layout__header {
+	margin: 0 !important;
+	width: 100% !important;
+	min-height: 56px !important;
+}
+
+.mdl-layout__header-row {
+	padding-left: 0px !important;
+	padding-right: 16px !important;
+	height: 56px !important;
+	position: relative;
+}
+
+.mdl-layout__content {
+	margin: 0 !important;
+}
+
+.page-content {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.menubar-logo {
+	width: 160px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.content {
+	position: absolute;
+	font-size: 20px;
+	text-align: center;
+	top: 104px;
+	bottom: 93px;
+	left: 0px;
+	right: 0px;
+	overflow-y: scroll;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.songtitle {
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	font-weight: 900;
+}
+
+.smallTitle {
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	font-weight: 900;
+}
+
+.songinfo {
+	box-sizing: border-box;
+}
+
+.playTime {
+	font-size: 16px;
+}
+
+.apiImage {
+	width: calc(100%/3.2);
+	max-width: 250px;
+}
+
+#fixed-header-drawer-exp { /*search bar*/
+	background-color: rgb(63,81,181);
+}
+
+#search-results-list {
+	position: fixed;
+	top: 56px;
+	right: 0;
+	background-color: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	z-index: 3;
+	display: none;
+
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+#search-results-list>tbody>tr>td {
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	width: 100%;
+	color: black;
+}
+
+#songinfo {
+	width: 100%;
+}
+
+#related-songs-list {
+	table-layout: fixed;
+	display: none;
+	white-space: normal;
+	max-width: 100% !important;
+
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+#related-songs-list>tbody>tr>td {
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	width: 100%;
+	max-height: 100%;
+}
+
+#albumart {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	opacity: 0.3;
+	z-index: -1;
+	margin-left: auto;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+#music-controls {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background-color: white;
+	box-shadow: 0px -5px 5px grey;
+	display: none;
+	padding: 0px 5px 10px 5px;
+	box-sizing: border-box;
+
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+#music-controls-buttons {
+	width: 100%;
+}
+
+#songProgressBarContainer {
+	width: calc(100% - 100px);
+	display: inline-block;
+}
+
+#youtubePlayer {
+	display: none;
+}
+
+#songBufferingBar {
+	width: 100%;
+}
+
+#errorMessage {
+	width: 512px;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	z-index: 9000;
+	margin-left: auto;
+	display: none;
+}
+
+#errorMessageTitle {
+	width: 512px;
+	max-width: 100%;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Forbidden_Symbol.svg/1024px-Forbidden_Symbol.svg.png') center / cover;
+	font-weight: 500;
+	height: 80px;
+}
+
+#errorMessageText {
+	font-size: 14px;
+}
+
+#errorMessageButton {
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+	.songtitle {
+		font-size: 24px;
+	}
+	.smallTitle {
+		font-size: 20px;
+	}
+}
